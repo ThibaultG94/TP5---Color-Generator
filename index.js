@@ -5,6 +5,8 @@ setInterval(() => {
 
   const rgb = [firstColor, secondColor, thirdColor];
   const body = document.querySelector("body");
+  const rbgText = document.querySelector(".text");
 
   body.style.background = "rgb(" + rgb[0] + ", " + rgb[1] + ", " + rgb[2] + ")";
+  rbgText.textContent = "rgb(" + rgb[0] + ", " + rgb[1] + ", " + rgb[2] + ")";
 }, 1000);
